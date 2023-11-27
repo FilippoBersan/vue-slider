@@ -57,23 +57,17 @@ createApp({
           'Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city',
         ],
       },
-
-      //   methods: {
-      //     next() {
-      //       this.currentIndex++;
-      //       if (this.currentIndex > this.movie.image.length - 1) {
-      //         this.currentIndex = 0;
-      //       }
-      //     },
-      //   },
+      currentIndex: 0,
     };
   },
   methods: {
     next() {
       console.log('click su next');
+      this.currentIndex++;
     },
     prev() {
       console.log('click su prev');
+      this.currentIndex--;
     },
   },
 }).mount('#app');
