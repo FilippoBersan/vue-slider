@@ -64,10 +64,16 @@ createApp({
     next() {
       console.log('click su next');
       this.currentIndex++;
+      if (this.currentIndex > this.games.images.length - 1) {
+        this.currentIndex = 0;
+      }
     },
     prev() {
       console.log('click su prev');
       this.currentIndex--;
+      if (this.currentIndex < 0) {
+        this.currentIndex = this.games.images.length - 1;
+      }
     },
   },
 }).mount('#app');
