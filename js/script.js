@@ -76,5 +76,11 @@ createApp({
         this.currentIndex = this.games.images.length - 1;
       }
     },
+
+    setImage(index) {
+      console.log(this.setImage);
+      console.log(index);
+      this.currentIndex = index;
+    },
   },
 }).mount('#app');

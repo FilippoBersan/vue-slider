@@ -31,9 +31,10 @@
               <img
                 v-for="(images ,index) in games.images"
                 :src="images"
-                :alt="`Immagine ${index+1}`"
+                :alt="`immagine ${index+1}`"
                 class="thumb"
                 :class="index === currentIndex ? 'active' : ''"
+                @click="setImage(index)"
               />
             </div>
 
